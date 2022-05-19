@@ -7,11 +7,29 @@
   </head>
   <body>
     <header>
-      <h1> Hola mundo</h1>
-      <p>Este es un parrafo</p>
+      <!--aqui va el logo y el título-->
+      <h1>Este es el título de la página</h1>
     </header>
-    <main></main>
-    <footer></footer>
+    <main>
+      <section>
+        <!--para contener los inputs de texto y los cambios de texto en varios <div>-->
+          <h2>¡Un paso más cerca de probarlo!</h2>
+          <button>Aún no estoy listo...<b> (Continuar comprando)</b></button>
+          <button>¡Vamos allá!<b> (Ir al pago)</b></button>
+          <p><a href="#">¿Qué estoy comprando?</a></p>
+      </section>
+      <form>
+        <h2>Ingresa tus datos</h2>
+        <input type="text" name="user" placeholder="Nombre del titular" required><br>
+        <input type="text" name="card" placeholder="Número de tarjeta" required><br>
+        <input type="text" name="cvv" placeholder="CVV" required>
+        <input type="month" name="expired" placeholder="Fecha de vencimiento" min="2022-05" required> <br>
+        <input type="button" value="Verificar">
+      </form>
+    </main>
+    <footer>
+      <!--pie de página. generalmente terminos y condiciones-->
+    </footer>
     <script src="index.js" type="module"></script>
   </body>
 </html>
