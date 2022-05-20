@@ -14,18 +14,18 @@
       <section id="ready">
         <!--para contener los inputs de texto y los cambios de texto en varios <div>-->
           <h2 id="firstStep">¡Un paso más cerca de <br> probarlo!</h2>
-          <button class="boton">Aún no estoy listo...<b> (Continuar comprando)</b></button>
-          <button class="boton">¡Vamos allá!<b> (Ir al pago)</b></button>
+          <button id="boton" class="i">Aún no estoy listo...<b> (Continuar comprando)</b></button>
+          <button id="boton" class="i">¡Vamos allá!<b> (Ir al pago)</b></button>
           <p><a href="#" class="duda">¿Qué estoy comprando?</a></p>
       </section>
       <form id="cardVerification">
         <h2>Ingresa tus datos</h2>
         <input type="text" id="box" class="large" name="user" placeholder="Nombre del titular" required><br>
         <input type="text" id="box" class="large" name="card" placeholder="Número de tarjeta" required><br>
-        <input type="text" id="box" class="cvv" name="cvv" placeholder="CVV" required>
-        <input type="month" id="box" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required> <br>
+        <input type="text" id="box" class="short" name="cvv" placeholder="CVV" required>
+        <input type="month" id="box" class="short" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required> <br>
     
-        <input type="submit" id="verificar" class="boton" value="Verificar">
+        <input type="submit" id="boton" class="verificar" value="Verificar">
         
       </form>
     </main>
