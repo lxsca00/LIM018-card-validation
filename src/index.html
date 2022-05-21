@@ -8,6 +8,7 @@
   <body>
     <header id="brand">
       <!--aqui va el logo y el título-->
+      <img src="broccoli.png">
       <h1>Este es el título de la página</h1>
     </header>
     <main>
@@ -20,17 +21,19 @@
       </section>
       <form id="cardVerification">
         <h2>Ingresa tus datos</h2>
-        <input type="text" id="box" class="large" name="user" placeholder="Nombre del titular" required><br>
-        <input type="text" id="box" class="large" name="card" placeholder="Número de tarjeta" required><br>
-        <input type="text" id="box" class="short" name="cvv" placeholder="CVV" required>
-        <input type="month" id="box" class="short" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required> <br>
-    
+        <input type="text" id="box" class=" name" name="user" placeholder="Nombre del titular" required>
+        <input type="text" id="box" class="card" name="card" placeholder="Número de tarjeta" required>
+        <input type="text" id="box" class="cvv" name="cvv" placeholder="CVV" required>
+        <input type="month" id="box" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required>
         <input type="submit" id="boton" class="verificar" value="Verificar">
         
       </form>
     </main>
     <footer>
       <!--pie de página. generalmente terminos y condiciones-->
+      <p class="ifoot">Terminos y condiciones</p>
+      <p class="ifoot">Sobre nosotros</p>
+      <p class="ifoot">Contacto</p>
     </footer>
     <script src="index.js" type="module"></script>
   </body>
