@@ -22,7 +22,7 @@ img{
 }
 
 
-#boton{
+#return, #go, #verificar{
     background-color: #ADE040;
     border: 1px solid #80A337;
     border-radius: 40px;
@@ -42,6 +42,7 @@ img{
 
 #cardVerification{
     width: fit-content;
+    display: none;
 }
 
 #cardVerification h2{
@@ -57,6 +58,7 @@ img{
     border-radius: 40px;
     height: 40px;
     margin-bottom: 15px;
+    padding: 15px;
 }
 .name,.card{
     width: 500px;
