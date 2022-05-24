@@ -1,7 +1,11 @@
 const validator = {
-  
+  isValid: function (creditCardNumber){
+  }
+
+
+  //maskify: function (creditCardNumber){}
 }
 
-let creditCardNumber = document.getElementById('card').value
+
 
 export default validator;

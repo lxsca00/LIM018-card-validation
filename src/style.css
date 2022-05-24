@@ -26,13 +26,13 @@ img{
     align-items: center;
     align-content: center;
     padding: 80px;
+   
 }
 
 #ready h2{
     font-size: 80px;
     text-align: center;
 }
-
 
 #return, #go, #verificar{
     background-color: #ADE040;
@@ -41,7 +41,6 @@ img{
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 40px;
 }
-
 
 .i{
     width: 400px;
@@ -56,8 +55,8 @@ img{
 
 #cardVerification{
     width: fit-content;
-    display: none;
     padding: 100px;
+    display: none;
 }
 
 #cardVerification h2{
@@ -65,7 +64,7 @@ img{
     margin-bottom: 30px;
 }
 
-#user, #card, #expired, #cvv {
+#name, #card, #cvv, #expired {
     background-color: #FAF9F9;
     color: gray;
     font-style: italic;
@@ -97,5 +96,4 @@ footer{
     font-style: italic;
     color: #739134;
     font-size: 12px;
-    margin-top: 40px;
 }
