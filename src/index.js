@@ -1,22 +1,22 @@
 import validator from './validator.js';
 
-let creditCard = {
-    user: 'Fulanito Perez',
-    creditCardNumber: 5362590285774569,
-    cvv: 257,
-    dueDate: 04/2024
-}
+
 
 document.getElementById('go').addEventListener('click', function(event){
     event.preventDefault()
-        document.getElementById('cardVerification').style.display='block'
+        document.getElementById('cardVerification').style.display='block';
+        document.getElementById('ready').style.display='none'
     })
+  
 
-
-/*document.getElementById('verificar').addEventListener('click', function(event){
-   event.preventDefault()
-    document.getElementById('datos').innerHTML ='¡Tarjeta validada!'
-})*/
-   
+ document.getElementById('verificar').addEventListener('click', function(){
+    let cardNumber = document.getElementById('card').value;
+    let firstNumbers = cardNumber.split('');
+    let digits = firstNumbers.reverse();
+        
+    document.getElementById('demo').innerHTML=digits;
+    document.getElementById('demo1').innerHTML=pairNumbers
+      })
+      
 
 console.log(validator);

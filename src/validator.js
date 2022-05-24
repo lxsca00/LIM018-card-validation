@@ -1,9 +1,7 @@
-const validator = {}
- /*creditCardNumber: '5362590285774569',
- isValid: () => {
-   console.log("Help")
- }
-};*/
+const validator = {
+  
+}
 
+let creditCardNumber = document.getElementById('card').value
 
 export default validator;

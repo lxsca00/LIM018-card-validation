@@ -8,7 +8,7 @@
   <body>
     <header id="brand">
       <!--aqui va el logo y el título-->
-      <img src="broccoli.png">
+      <img src='#'>
       <h1>Este es el título de la página</h1>
     </header>
     <main>
@@ -21,11 +21,16 @@
       </section>
       <form id="cardVerification">
         <h2 id="datos">Ingresa tus datos</h2>
-        <input type="text" id="box" class=" name" name="user" placeholder="Nombre del titular" required>
-        <input type="text" id="box" class="card" name="card" placeholder="Número de tarjeta" required>
-        <input type="text" id="box" class="cvv" name="cvv" placeholder="CVV" required>
-        <input type="month" id="box" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required>
-        <input type="submit" id="verificar" class="verificar" value="Verificar">
+        <input type="text" id="user" class=" name" name="user" placeholder="Nombre del titular">
+        <input type="text" id="card" class="card" name="card" placeholder="Número de tarjeta">
+        <input type="text" id="cvv" class="cvv" name="cvv" placeholder="CVV">
+        <input type="month" id="expired" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12">
+
+        <p id='demo'></p>
+        <p id="demo1"></p>
+        <p id='demo2'></p>
+
+        <input type="button" id="verificar" class="verificar" value="Verificar">
         
       </form>
     </main>
