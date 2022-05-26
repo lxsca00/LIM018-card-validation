@@ -6,32 +6,38 @@ document.getElementById('go').addEventListener('click', function(){
   })
 
 
-/*let digits = document.getElementById('card').value;
-let cardNumber = digits.split('');
-let arrReverse = cardNumber.reverse();
-
-document.getElementById('verificar').addEventListener('click', function(event){
-    event.preventDefault();
-    document.getElementById('demo').innerHTML=arrReverse
-})*/
-
-
-  document.getElementById('verificar').addEventListener('click', function(){
-    let cardNumber = document.getElementById('card').value;
-    let firstNumbers = cardNumber.split('');
-    let digits = firstNumbers.reverse();
-    //let creditCardNumber = parseInt(digits)
-    console.log(typeof digits[2])
-    for (let i = 1; i<digits.length;i=i+2){
-        let twice = digits[i]*2
-        if (twice >= 10){
-
-        } else {}
-        console.log(typeof twice[0])
+document.getElementById('verificar').addEventListener('click', function(){
+    let cardNumber = document.getElementById('card').value; //Paso 1: Toma el número de tarjeta desde el input text
+    let firstNumbers = cardNumber.split(''); //Paso 2: Separa el número el un array de strings
+    let digits = firstNumbers.reverse(); // Paso 3: Invierte el orden del array, continuan siendo strings
+    let cardPairNumbers = 0; //(Esta variable almacena la suma de los números de las posiciones pares luego de sumar los digitos de los >=10)
+    let cardOodNumbers = 0; //(Esta variable almacena la suma de los números de las posiciones impares)
+    
+    console.log(digits)
+    for (let i= 1; i<digits.length;i=i+2){
+        let doubleDigits = digits[i]*2 // Paso 4: Devuelve la multiplicación de números pares
+        let pairNumbers
+          if (doubleDigits>= 10){ //Paso 5: Suma los digitos de los números mayores a 10
+            pairNumbers = doubleDigits.toString().split('').reduce(function(r,n){return parseInt(r)+parseInt(n)})
+          } else {pairNumbers = doubleDigits}
+        cardPairNumbers += pairNumbers //Paso 6: Suma de los números pares
+      }
+    console.log(cardPairNumbers)
+    for (let i=0;i<digits.length;i=i+2){ 
+        cardOodNumbers += parseInt(digits[i]) //Paso 7: Suma de los números impares
     }
-    //document.getElementById('demo').innerHTML= digits
-   // document.getElementById('demo1').innerHTML= typeof creditCardNumber
-  })
+    let ifItsValid = (cardOodNumbers + cardPairNumbers)%10
+    console.log(cardOodNumbers)
+    console.log(ifItsValid)
+    if(ifItsValid===0){
+      document.getElementById('datos').innerHTML='Tarjeta válida'
+      document.getElementById('card').style.backgroundColor = '#E4F6BD'
+    } else {
+      document.getElementById('datos').innerHTML='Tarjeta inválida'
+      document.getElementById('card').style.backgroundColor = '#F9D0CD'
+    }
+    
+  })   
   
       
 console.log(validator);
