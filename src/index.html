@@ -8,27 +8,25 @@
   <body>
     <header id="brand">
       <!--aqui va el logo y el título-->
-      <img src='#'>
-      <h1>Este es el título de la página</h1>
+      <img id="img" src="broco.jpg">
+      <h1 id="myBrand">Este es el título de la página</h1>
     </header>
     <main>
       <section id="ready">
         <!--para contener los inputs de texto y los cambios de texto en varios <div>-->
-          <h2 id="firstStep">¡Un paso más cerca de <br> probarlo!</h2>
-          <button id="return" class="i">Aún no estoy listo...<b> (Continuar comprando)</b></button>
+          <h2 id="firstStep">¡Un paso más cerca de <br>probarlo!</h2>
+          <!--<button id="return" class="i">Aún no estoy listo...<b> (Continuar comprando)</b></button>-->
           <button id="go" class="i">¡Vamos allá!<b> (Ir al pago)</b></button>
           <p><a href="#" class="duda">¿Qué estoy comprando?</a></p>
       </section>
       <form id="cardVerification">
         <h2 id="datos">Ingresa tus datos</h2>
-        <input type="text" id="name" class=" name" name="user" placeholder="Nombre del titular">
-        <input type="text" id="card" class="card" name="card" placeholder="Número de tarjeta">
-        <input type="text" id="cvv" class="cvv" name="cvv" placeholder="CVV">
-        <input type="month" id="expired" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12">
-        <p id='demo'></p>
-        <p id="demo1"></p>
-        <p id='demo3'></p>
-        <input type="button" id="verificar" class="verificar" value="Verificar">
+        <input type="text" id="name" class=" name" name="user" placeholder="Nombre del titular" required>
+        <input type="text" id="card" class="card" name="card" placeholder="Número de tarjeta" value="" required>
+        <input type="text" id="cvv" class="cvv" name="cvv" placeholder="CVV" required>
+        <input type="month" id="expired" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required>
+        
+        <input type="submit" id="verificar" class="verificar" value="Verificar">
         
       </form>
     </main>
