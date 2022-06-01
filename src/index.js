@@ -1,12 +1,20 @@
 import validator from './validator.js'; 
 
-document.getElementById('go').addEventListener('click', function(){
-    document.getElementById('cardVerification').style.display='block'
-    document.getElementById('ready').style.display='none'
-    document.getElementById('brand').style.filter= 'blur(2px)'
+document.getElementById('goPay').addEventListener('click', function(){
+    document.getElementById('cardVerification').style.display='block';
+    document.getElementById('ready').style.display='none';
+    document.getElementById('brand').style.filter= 'blur(2px)';
+    document.querySelector('.myShoppingCart').style.display='none';
   })
 
-
+document.getElementById('exit').addEventListener('click', function(){
+  if (document.getElementById('card').style.display='block'){
+    document.getElementById('cardVerification').style.display='none';
+    document.getElementById('ready').style.display='block';
+    document.getElementById('brand').style.filter='none';
+    document.querySelector('.myShoppingCart').style.display='block';
+  }
+})
 
 
 document.getElementById('verificar').addEventListener('click', function(){ 
@@ -14,7 +22,7 @@ document.getElementById('verificar').addEventListener('click', function(){
   if (creditCardNumber==''){
     return 
   } 
-  //console.log(creditCardNumber)
+
     if(validator.isValid(creditCardNumber)===true){
       document.getElementById('datos').innerHTML='¡Tarjeta validada!'
       document.getElementById('card').style.backgroundColor = '#E4F6BD'
@@ -22,11 +30,6 @@ document.getElementById('verificar').addEventListener('click', function(){
       document.getElementById('datos').innerHTML='Tarjeta inválida...'
       document.getElementById('card').style.backgroundColor = '#F9D0CD'
     }
-  //console.log(validator.maskify(creditCardNumber))
   
   document.getElementById('card').value=validator.maskify(creditCardNumber)
   })   
-
-  
-      
-//console.log(validator);

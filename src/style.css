@@ -1,65 +1,121 @@
 html{
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: Arial, Helvetica, sans-serif;
+    background-color: #F3F0D7;
 }
-
 
 #brand{
-    font-size: 24px;
-    /*filter: blur(2px);*/
-    margin-top: 50px;
-    margin-left: 100px;
+    display: flex;
+    flex-direction: row;
+    background-color: #FFFFFF;
+    margin: 0;
 }
 
+#myBrand{
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 48px;
+    font-style: italic;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
 
-#img{
+#brandImg{
     float: left;
     height: 60px;
     margin-right: 20px;
 }
 
-#ready{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    align-content: center;
-    padding: 50px;
-    padding-top: 20px;
-    padding-bottom: 70px;
+.myShoppingBag{
+    height: 25px;
 }
 
-#ready h2{
-    font-size: 80px;
+#bag{
+    width: 20px;
+    height: 20px;
+}
+
+#message{
+    background-color: #B4E197;
+    border-radius: 30px;
+    padding: 40px;
+    margin: 50px;
+}
+
+#readyMessage{
+    font-size: 60px;
     text-align: center;
-    margin-top: 30px;
-    margin-bottom: 60px;
+    margin: 0;
 }
 
-#return, #go, #verificar{
-    background-color: #ADE040;
-    border: 1px solid #80A337;
-    border-radius: 40px;
+#buttons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.messageButton{
+    width: 350px;
+    margin-top: 35px;
+}
+
+#return, #goPay, #verificar, #go, .myShoppingCart{
+    background-color: #83BD75;
+    border: 1px solid #4E944F;
+    border-radius: 25px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
-    height: 40px;
+    height: 42px;
 }
 
-.i{
-    width: 400px;
-    margin: 20px;
+.go{
+    width: 50px;
+    height: 35px;
 }
 
-.duda{
-    color: #739134;
-    text-decoration-line: line-through;
+#promoMessage{
+    text-align: center;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 24px;
+    margin: 0;
+}
+
+#advertising{
+    padding: 0;
+    margin: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+#promo{
+    width: 250px;
+    height: 280px;
+    border-radius: 30px;
+    margin: 0px;
+    padding-bottom: 20px;
+    background-color: #D9D9D9;
+    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+.promoImg{
+    width: 250px;
+    height: 250px;
+    border-radius: 30px 30px 0 0;
+}
+
+.promoName{
+    margin: 0px;
 }
 
 #cardVerification{
-    margin-left: 50px;
-    padding: 50px;
-    padding-bottom: 80px;
     display: none;
+    background-color: #B4E197;
+    border-radius: 30px;
+    padding: 40px 60px 40px 60px;
+    margin: 50px;
+    height: 450px;
 }
 
 #cardVerification h2{
@@ -68,6 +124,11 @@ html{
     margin-bottom: 35px;
 }
 
+#exit{
+    width: 20px;
+    height: 20px;
+    float: right;
+}
 #name, #card, #cvv, #expired {
     background-color: #FAF9F9;
     color: gray;
@@ -76,29 +137,21 @@ html{
     border-radius: 40px;
     height: 20px;
     margin-bottom: 15px;
-    padding: 15px;
+    padding: 10px;
 }
+
 .name,.card{
     width: 500px;
     display: block;
 }
 
 .cvv,.expired{
-    width: 248px;
+    width: 235px;
+    display: inline;
 }
 
 .verificar{
     display: block;
     width: 200px;
     margin-top: 20px;
-}
-
-footer{
-    display: flex;
-    justify-content: space-around;
-    align-items: baseline;
-    font-style: italic;
-    color: #739134;
-    font-size: 12px;
-    background-color: #ADE040;
 }

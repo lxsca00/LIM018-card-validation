@@ -2,40 +2,61 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <title>Tarjeta de crédito válida</title>
+    <title>mad brocco.</title>
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header id="brand">
-      <!--aqui va el logo y el título-->
-      <img id="img" src="broco.jpg">
-      <h1 id="myBrand">Este es el título de la página</h1>
+    <header>
+      <section id="brand">
+        <img id="brandImg" src="img\broco.jpg">
+        <h1 id="myBrand">mad brocco.</h1>
+        <button class="myShoppingCart">
+          <img id="bag" src="img\carrito.png">
+          <p id="myBag">15</p>
+        </button>
+      </section>
     </header>
     <main>
       <section id="ready">
-        <!--para contener los inputs de texto y los cambios de texto en varios <div>-->
-          <h2 id="firstStep">¡Un paso más cerca de <br>probarlo!</h2>
-          <!--<button id="return" class="i">Aún no estoy listo...<b> (Continuar comprando)</b></button>-->
-          <button id="go" class="i">¡Vamos allá!<b> (Ir al pago)</b></button>
-          <p><a href="#" class="duda">¿Qué estoy comprando?</a></p>
+         <article id="message">
+          <h2 id="readyMessage">¿Listo para continuar?</h2>
+          <div id="buttons">
+            <button id="return" class="messageButton">No...<b> (Regresar al carrito)</b></button>
+            <button id="goPay" class="messageButton">¡Vamos allá!<b> (Ir al pago)</b></button>
+          </div>
+         </article>  
+        <p id="promoMessage">No olvides checar nuestras promociones</p>
+         <article id="advertising">
+          <figure id="promo"> 
+          <img class="promoImg" src="img\pizza.jpg">
+          <p class="promoName"> Pizzas </p>
+          <button id="go" class="go"> ¡Ir! </button> 
+          </figure>
+          <figure id="promo">
+            <img class="promoImg" src="img\summer pasta.jpg">
+            <p class="promoName"> Pastas </p>
+            <button id="go" class="go"> ¡Ir! </button>
+          </figure>
+          <figure id="promo">
+            <img class="promoImg" src="img\wine.jpg">
+            <p class="promoName"> Bebidas </p>
+            <button id="go" class="go"> ¡Ir! </button>
+          </figure>
+         </article>
       </section>
       <form id="cardVerification">
+        <img id="exit" src="img\equis.png">
         <h2 id="datos">Ingresa tus datos</h2>
         <input type="text" id="name" class=" name" name="user" placeholder="Nombre del titular" required>
         <input type="text" id="card" class="card" name="card" placeholder="Número de tarjeta" value="" required>
         <input type="text" id="cvv" class="cvv" name="cvv" placeholder="CVV" required>
         <input type="month" id="expired" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required>
-        
         <input type="submit" id="verificar" class="verificar" value="Verificar">
-        
       </form>
     </main>
     
     <footer>
-      <!--pie de página. generalmente terminos y condiciones-->
-      <p class="ifoot">Terminos y condiciones</p>
-      <p class="ifoot">Sobre nosotros</p>
-      <p class="ifoot">Contacto</p>
+      
     </footer>
     <script src="index.js" type="module"></script>
   </body>
