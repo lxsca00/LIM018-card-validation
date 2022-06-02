@@ -2,56 +2,54 @@
 
 ## Índice
 
-* [1. Preámbulo](#1-preámbulo)
-* [2. Resumen del proyecto](#2-resumen-del-proyecto)
-* [3. Investigación UX](#3-Investigación UX)
+* [1. Resumen](#1-resumen)
+* [2. Imagen final del proyecto](#2-imagen-final-del-proyecto)
+* [3. Investigación UX](#3-investigación-ux)
+* [4. Acceso al proyecto](#4-acceso-al-proyecto)
 * [5. Criterios de aceptación mínimos del proyecto](#5-criterios-de-aceptación-mínimos-del-proyecto)
-* [6. Pistas, tips y lecturas complementarias](#6-pistas-tips-y-lecturas-complementarias)
 
 ***
 
-## 1. Preámbulo
+## 1. Resumen
 
-El [algoritmo de Luhn](https://es.wikipedia.org/wiki/Algoritmo_de_Luhn),
-también llamado algoritmo de módulo 10, es un método de suma de verificación,
-se utiliza para validar números de identificación; tales como el IMEI de los
-celulares, tarjetas de crédito, etc.
+Plataforma de pago de un restaurante, con una primera vista donde se muestran las promociones antes de ir al pago y otra vista donde se piden los datos para validar el medio de pago (tarjeta).
 
-Este algoritmo es simple. Obtenemos la reversa del número a verificar (que
-solamente contiene dígitos [0-9]); a todos los números que ocupan una posición
-par se les debe multiplicar por dos, si este número es mayor o igual a 10,
-debemos sumar los dígitos del resultado; el número a verificar será válido si
-la suma de sus dígitos finales es un múltiplo de 10.
+## 2. Imagen final del proyecto
 
-![gráfica de algoritmo de Luhn](https://www.101computing.net/wp/wp-content/uploads/Luhn-Algorithm.png)
-
-## 2. Resumen del proyecto
-
-En este proyecto tendrás que construir una aplicación web que le permita a un
-usuario validar el número de una tarjeta de crédito. Además, tendrás que
-implementar funcionalidad para ocultar todos los dígitos de una tarjeta menos
-los últimos cuatro.
-
-La temática es libre. Tú debes pensar en qué situaciones de la vida real se
-necesitaría validar una tarjeta de crédito y pensar en cómo debe ser esa
-experiencia de uso (qué pantallas, explicaciones, mensajes, colores, ¿marca?)
-etc.
-
-Trabajando en parejas aprenderán a construir una aplicación web que interactuará
-con lx usuarix final a través del navegador, utilizando HTML, CSS y JavaScript
-como tecnologías.
-
+Insertar imagen final
 
 ## 3. Investigación UX
 
-* El equipo de coaches te dará un tiempo sugerido e indicaciones sobre si trabajar
-  sola o en equipo. Recuerda que cada una aprende a diferente ritmo.
-* El proyecto será entregado subiendo tu código a GitHub (commit/push) y la
-  interfaz será desplegada usando GitHub pages. Si no sabes lo que es GitHub, no
-  te preocupes, lo aprenderás durante este proyecto.
+### ¿Quienes son mis usuarios?
 
-## Prototipo final
-![Prototipofinal](Nuevo_prototipo_Vista1.png)
+### ¿Cómo soluciono sus problemas?
+
+### Historias de usuario
+
+##### `Historia de usuario N°1`
+*Como* usuario de la aplicación del negocio
+*busco* validar mi tarjeta para el pago de mi pedido
+*para* poder tener mi producto lo más pronto.
+
+##### `Historia de usuario N°2`
+*Como* usuario de la aplicación
+*busco* ocultar el número de mi tarjeta
+*para* poder mantener mi seguridad.
+
+### Primer prototipo
+![Vista 1_Old](https://user-images.githubusercontent.com/105660480/171695678-ab21b902-e8b9-4e51-bc61-bc0a725161dc.png)
+![Vista 2_Old](https://user-images.githubusercontent.com/105660480/171695819-0c643906-66f3-4568-a206-f9ec91242093.png)
+
+### Feedback
+
+Durante las distintas etapas de realización del proyecto se recibió feedback tanto de coaches como de compañeras. Los feedbacks respecto al código fueron de utilidad para optimizar su entendimiento y función, mientras que tras recibir feedback respecto al diseño inicial y tras reflexión propia se optó por agregar más elementos y rehacer el prototipo.
+
+### Prototipo final
+![Nuevo_prototipo_Vista1.png](https://user-images.githubusercontent.com/105660480/171694731-efe16c98-0bf6-4f39-a10d-548d98b89c38.png)
+![Nuevo prototipo_Vista 2](https://user-images.githubusercontent.com/105660480/171694958-30292084-3b05-46fb-b7f2-450be1f12dd3.png)
+
+## 4. Acceso al proyecto
+Se accede al proyecto mediante el siguiente enlace de Git Hub Pages: https://lxsca00.github.io/LIM018-card-validation/
 
 ## 5. Criterios de aceptación mínimos del proyecto
 
