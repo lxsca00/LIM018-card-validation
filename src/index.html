@@ -49,18 +49,17 @@
           </figure>
          </article>
       </section>
-      <form id="cardVerification">
-        <img id="exit" src="img\equis.png">
-        <article id="userData">
-        <h2 id="datos">Ingresa tus datos</h2>
-        <input type="text" id="name" class=" name" name="user" placeholder="Nombre del titular" required>
-        <input type="text" id="card" class="card" name="card" placeholder="Número de tarjeta" value="" required>
-        <input type="text" id="cvv" class="cvv" name="cvv" placeholder="CVV" required>
-        <input type="month" id="expired" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required>
-        <input type="submit" id="verificar" class="verificar" value="Verificar">
-        <input type="reset" id="tryAgain" class="tryAgain" value="Intenta de nuevo">
-        </article>
-      </form>
+      <section id="payPage">
+        <form id="cardVerification">
+          <img id="exit" src="img\equis.png">
+          <h2 id="datos">Ingresa tus datos</h2>
+          <input type="text" id="name" class="userInfo" name="user" placeholder="Nombre del titular" required>
+          <input type="text" id="card" class="userInfo" name="card" placeholder="Número de tarjeta" value="" required>
+          <input type="text" id="cvv" class="userInfo" name="cvv" placeholder="CVV" required>
+          <input type="month" id="expired" class="userInfo" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required>
+          <input type="button" id="verificar" class="verificar" value="Verificar">
+        </form>
+      </section>
     </main>
     
     <footer>

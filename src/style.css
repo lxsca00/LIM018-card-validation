@@ -74,7 +74,7 @@ html, body{
     margin-top: 35px;
 }
 
-#return, #goPay, #verificar, #go, #tryAgain, .myShoppingCart{
+#return, #goPay, #verificar, #go, .myShoppingCart{
     background-color: #83BD75;
     border: 1px solid #4E944F;
     border-radius: 25px;
@@ -132,9 +132,11 @@ html, body{
     display: inline;
 }
 
+#payPage{
+    display: none
+}
 
 #cardVerification{
-    display: none;
     background-color: #B4E197;
     border-radius: 30px;
     padding: 40px 60px 40px 60px;
@@ -155,7 +157,8 @@ html, body{
     height: 20px;
     float: right;
 }
-#name, #card, #cvv, #expired {
+
+.userInfo {
     background-color: #FAF9F9;
     color: gray;
     font-style: italic;
@@ -166,22 +169,22 @@ html, body{
     padding: 10px;
 }
 
-.name,.card{
+#name,#card{
     width: 500px;
     display: block;
 }
 
-.cvv,.expired{
+#cvv,#expired{
     width: 235px;
     display: inline;
 }
 
-.verificar, .tryAgain{
+.verificar {
     width: 200px;
     margin-top: 20px;
     margin-right: 20px;
 }
 
-.tryAgain{
-    visibility: hidden;
+#verifyMessage{
+    background-color: aqua;
 }
