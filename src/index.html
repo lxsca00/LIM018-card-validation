@@ -12,7 +12,7 @@
         <h1 id="myBrand">mad brocco.</h1>
         <button class="myShoppingCart">
           <img id="bag" src="img\carrito.png">
-          <p id="myBag">15</p>
+          <p id="myBag">2</p>
         </button>
       </section>
     </header>
@@ -28,17 +28,22 @@
         <p id="promoMessage">No olvides checar nuestras promociones</p>
          <article id="advertising">
           <figure id="promo"> 
-          <img class="promoImg" src="img\pizza.jpg">
+          <img class="promoImg" src="img\pizza.png">
           <p class="promoName"> Pizzas </p>
           <button id="go" class="go"> ¡Ir! </button> 
           </figure>
           <figure id="promo">
-            <img class="promoImg" src="img\summer pasta.jpg">
+            <img class="promoImg" src="img\pasta.png">
             <p class="promoName"> Pastas </p>
             <button id="go" class="go"> ¡Ir! </button>
           </figure>
           <figure id="promo">
-            <img class="promoImg" src="img\wine.jpg">
+            <img class="promoImg" src="img\bread.png">
+            <p class="promoName"> Aperitivos </p>
+            <button id="go" class="go"> ¡Ir! </button>
+          </figure>
+          <figure id="promo">
+            <img class="promoImg" src="img\wine.png">
             <p class="promoName"> Bebidas </p>
             <button id="go" class="go"> ¡Ir! </button>
           </figure>
@@ -46,12 +51,15 @@
       </section>
       <form id="cardVerification">
         <img id="exit" src="img\equis.png">
+        <article id="userData">
         <h2 id="datos">Ingresa tus datos</h2>
         <input type="text" id="name" class=" name" name="user" placeholder="Nombre del titular" required>
         <input type="text" id="card" class="card" name="card" placeholder="Número de tarjeta" value="" required>
         <input type="text" id="cvv" class="cvv" name="cvv" placeholder="CVV" required>
         <input type="month" id="expired" class="expired" name="expired" placeholder="Fecha de vencimiento" min="2022-05" max="2030-12" required>
         <input type="submit" id="verificar" class="verificar" value="Verificar">
+        <input type="reset" id="tryAgain" class="tryAgain" value="Intenta de nuevo">
+        </article>
       </form>
     </main>
     
