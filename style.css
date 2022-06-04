@@ -5,7 +5,7 @@ html, body{
     background-color: #F3F0D7;
 }
 
-#brand{
+.brand{
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -28,12 +28,12 @@ html, body{
     margin-right: 20px;
 }
 
-.myShoppingCart{
-    height: 25px;
+#myShoppingCart{
+    height: 35px;
     width: 70px;
     padding: 5px;
     align-self: center;
-    justify-content: flex-end;
+    margin-left: auto;
 }
 
 #myBag{
@@ -74,13 +74,17 @@ html, body{
     margin-top: 35px;
 }
 
-#return, #goPay, #verificar, #go, .myShoppingCart{
+button {
     background-color: #83BD75;
     border: 1px solid #4E944F;
     border-radius: 25px;
     box-shadow: inset 0px 4px 4px rgba(0, 0, 0, 0.25);
     height: 42px;
     font-size: 15px;
+}
+
+button:active{
+    background-color:#4E944F;
 }
 
 .go{
@@ -109,10 +113,9 @@ html, body{
 
 #promo{
     width: 320px;
-    height: 230px;
+    height: 225px;
     border-radius: 30px;
     margin: 10px 0 10px 0;
-    /*padding-bottom: 20px;*/
     background-color: #D9D9D9;
     filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
@@ -141,7 +144,7 @@ html, body{
     border-radius: 30px;
     padding: 40px 60px 40px 60px;
     margin: 50px 70px 50px 70px;
-    height: 450px;
+    height: 400px;
     width: 600px;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -185,6 +188,9 @@ html, body{
     margin-right: 20px;
 }
 
-#verifyMessage{
-    background-color: aqua;
+.rights{
+    text-align: center;
+    margin: 0 0 40px 0;
+    font-size: 12px;
+    font-style: italic;
 }
