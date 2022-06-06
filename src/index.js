@@ -29,7 +29,14 @@ document.getElementById('verificar').addEventListener('click', function(){
     } else {
       document.getElementById('datos').innerHTML='Tu tarjeta no es válida...'
       document.getElementById('card').style.backgroundColor = '#F9D0CD'
+      document.getElementById('reset').style.visibility='visible'
     }
+
+document.getElementById('reset').addEventListener('click', function(){
+  document.getElementById('datos').innerHTML= 'Ingresa tus datos';
+  document.getElementById('card').style.backgroundColor = '#FFFFFF';
+  document.getElementById('reset').style.visibility='hidden'
+})
   
   document.getElementById('card').value=validator.maskify(creditCardNumber)
   })   

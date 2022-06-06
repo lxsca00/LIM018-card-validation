@@ -16,13 +16,16 @@ Plataforma de pago de un restaurante, con una primera vista donde se muestran la
 
 ## 2. Imagen final del proyecto
 
-Insertar imagen final
+![Vista 1](https://user-images.githubusercontent.com/105660480/172178943-7ff2bc5e-5319-4171-bf08-28ba3614b6c0.png)
+![Vista 2](https://user-images.githubusercontent.com/105660480/172179063-48b0ce15-e7f7-4f28-a2cc-60b22785a144.png)
 
 ## 3. Investigación UX
 
 ### ¿Quienes son mis usuarios?
+Mis usuarios son los clientes que ingresen a la plataforma del restaurante y deseen iniciar su proceso de pago para concretar su pedido de manera rápida.
 
 ### ¿Cómo soluciono sus problemas?
+Realizando la validación previa de la tarjeta para que se reduzcan los problemas que puedan existir al generar el pago.
 
 ### Historias de usuario
 
