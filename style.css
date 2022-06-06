@@ -74,7 +74,7 @@ html, body{
     margin-top: 35px;
 }
 
-button {
+button, .formButtons {
     background-color: #83BD75;
     border: 1px solid #4E944F;
     border-radius: 25px;
@@ -83,7 +83,7 @@ button {
     font-size: 15px;
 }
 
-button:active{
+button:active, .formButtons:active{
     background-color:#4E944F;
 }
 
@@ -182,10 +182,14 @@ button:active{
     display: inline;
 }
 
-.verificar {
+.formButtons {
     width: 200px;
     margin-top: 20px;
     margin-right: 20px;
+}
+
+#reset{
+    visibility: hidden;
 }
 
 .rights{
