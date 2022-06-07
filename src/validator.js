@@ -9,7 +9,7 @@ const validator = {
         let doubleDigits = digits[i]*2 // Paso 4: Devuelve la multiplicación de números pares
         let pairNumbers
           if (doubleDigits>= 10){ //Paso 5: Suma los digitos de los números mayores a 10
-            pairNumbers = doubleDigits.toString().split('').reduce(function(r,n){return parseInt(r)+parseInt(n)})
+            pairNumbers = doubleDigits.toString().split('').reduce(function(digit1,digit2){return parseInt(digit1)+parseInt(digit2)})
           } else {pairNumbers = doubleDigits}
         cardPairNumbers += pairNumbers //Paso 6: Suma de los números pares
       }
