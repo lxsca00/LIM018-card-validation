@@ -1,20 +1,18 @@
 import validator from './validator.js'; 
 
 document.getElementById('goPay').addEventListener('click', function(){
-    document.getElementById('payPage').style.display='block';
+    document.getElementById('cardVerification').style.display='block';
     document.getElementById('ready').style.display='none';
     document.querySelector('.brand').style.filter= 'blur(2px)';
     document.getElementById('myShoppingCart').style.display='none';
   })
 
 document.getElementById('exit').addEventListener('click', function(){
-  if (document.getElementById('card').style.display='block'){
-    document.getElementById('payPage').style.display='none';
+    document.getElementById('cardVerification').style.display='none';
     document.getElementById('ready').style.display='block';
     document.querySelector('.brand').style.filter='none';
     document.getElementById('myShoppingCart').style.display='block'
-  }
-})
+  })
 
 
 document.getElementById('verificar').addEventListener('click', function(){ 
