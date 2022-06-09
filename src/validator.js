@@ -6,18 +6,21 @@ const validator = {
   let cardOodNumbers = 0; //(Esta variable almacena la suma de los números de las posiciones impares)
 
     for (let i= 1; i<digits.length;i=i+2){
-        let doubleDigits = digits[i]*2 // Paso 4: Devuelve la multiplicación de números pares
-        let pairNumbers
-          if (doubleDigits>= 10){ //Paso 5: Suma los digitos de los números mayores a 10
-            pairNumbers = doubleDigits.toString().split('').reduce(function(digit1,digit2){return parseInt(digit1)+parseInt(digit2)})
-          } else {pairNumbers = doubleDigits}
-        cardPairNumbers += pairNumbers //Paso 6: Suma de los números pares
-      }
+      let doubleDigits = digits[i]*2 // Paso 4: Devuelve la multiplicación de números pares
+      let pairNumbers
+        if (doubleDigits>= 10){ //Paso 5: Suma los digitos de los números mayores a 10
+          pairNumbers = doubleDigits.toString().split('').reduce(function(digit1,digit2){
+            return parseInt(digit1)+parseInt(digit2)
+          })
+        } else {pairNumbers = doubleDigits}
+      cardPairNumbers += pairNumbers //Paso 6: Suma de los números pares
+    }
 
     for (let i=0;i<digits.length;i=i+2){ 
-        cardOodNumbers += parseInt(digits[i]) //Paso 7: Suma de los números impares
+      cardOodNumbers += parseInt(digits[i]) //Paso 7: Suma de los números impares
     }
-    let ifItsValid = (cardOodNumbers + cardPairNumbers)%10
+
+  let ifItsValid = (cardOodNumbers + cardPairNumbers)%10
     if (ifItsValid===0){
       return true
     } else {

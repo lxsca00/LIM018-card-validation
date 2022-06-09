@@ -21,14 +21,14 @@ document.getElementById('verificar').addEventListener('click', function(){
     return 
   } 
 
-    if(validator.isValid(creditCardNumber)===true){
+  if(validator.isValid(creditCardNumber)===true){
       document.getElementById('datos').innerHTML='¡Tarjeta validada!'
       document.getElementById('card').style.backgroundColor = '#E4F6BD'
-    } else {
+  } else {
       document.getElementById('datos').innerHTML='Tu tarjeta no es válida...'
       document.getElementById('card').style.backgroundColor = '#F9D0CD'
       document.getElementById('reset').style.visibility='visible'
-    }
+  }
 
 document.getElementById('reset').addEventListener('click', function(){
   document.getElementById('datos').innerHTML= 'Ingresa tus datos';
@@ -36,5 +36,5 @@ document.getElementById('reset').addEventListener('click', function(){
   document.getElementById('reset').style.visibility='hidden'
 })
   
-  document.getElementById('card').value=validator.maskify(creditCardNumber)
+document.getElementById('card').value=validator.maskify(creditCardNumber)
   })   
